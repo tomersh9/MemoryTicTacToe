@@ -15,5 +15,5 @@ const game = new Phaser.Game(config);
 //adding scenes to the game
 game.scene.add("menuScene", MenuScene);
 game.scene.add("gameScene", GameScene);
-//starting the scene
+//starting with menu scene
 game.scene.start("menuScene");
