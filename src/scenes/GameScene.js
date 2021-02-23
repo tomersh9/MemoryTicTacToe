@@ -75,9 +75,9 @@ export default class GameScene extends Phaser.Scene {
 
     let cellKey = 0;
     for (let row = 0; row < 3; row++) {
-      let y = startPosition + squareHalf + squareSize * row + row * 10;
+      const y = startPosition + squareHalf + squareSize * row + row * 10;
       for (let col = 0; col < 3; col++) {
-        let x = startPosition + squareHalf + squareSize * col + col * 10;
+        const x = startPosition + squareHalf + squareSize * col + col * 10;
 
         //create squares
         const square = this.add.rectangle(x, y, squareSize, squareSize, squareColor, 0.7);
